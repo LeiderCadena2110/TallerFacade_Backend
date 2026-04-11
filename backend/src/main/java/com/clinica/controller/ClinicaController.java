@@ -99,6 +99,11 @@ public class ClinicaController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "Backend funcionando!";
+    }
+
     public static class LoginRequest {
         private String pacienteId;
 
